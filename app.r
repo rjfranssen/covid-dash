@@ -166,9 +166,19 @@ ui <- dashboardPage(
   ###################################################
   dashboardHeader(
     title = custom_header,
-    dropdownMenuOutput("messagesMenu")
+    dropdownMenuOutput("messagesMenu"),
     #dropdownMenuOutput("notificationsMenu")
     #dropdownMenuOutput("tasksMenu")
+    dropdownMenu(
+      type = "notifications", 
+      icon = icon("question-circle"),
+      badgeStatus = NULL,
+      headerText = "More links:",
+      notificationItem("git repo", icon = icon("github"),
+                       href = "https://github.com/rjfranssen/covid-dash"),
+      notificationItem("shiny", icon = icon("r-project"),
+                       href = "http://shiny.rstudio.com/")
+    )
   ),
   
   ###################################################

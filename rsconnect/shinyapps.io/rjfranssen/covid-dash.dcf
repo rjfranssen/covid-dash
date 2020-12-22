@@ -1,0 +1,12 @@
+name: covid-dash
+title: covid-dash
+username:
+account: rjfranssen
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3375837
+bundleId: 4018940
+url: https://rjfranssen.shinyapps.io/covid-dash/
+when: 1608646239.36181
+asMultiple: FALSE
+asStatic: FALSE
